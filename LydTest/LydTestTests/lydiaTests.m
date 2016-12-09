@@ -44,12 +44,24 @@
                                                     } else {
                                                         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
                                                         NSLog(@"%@", httpResponse);
+                                                        NSError *localError = nil;
+                                                        NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&localError];
+                                                        NSLog(@"%@",parsedObject);
+                                                        
+                                                        if (localError != nil) {
+                                                            NSLog(@"%@",localError);
+                                                        }
+                                                        
                                                     }
                                                     [expectation fulfill];
                                                 }];
     [dataTask resume];
     
     [self waitForExpectationsWithTimeout:10.0 handler:nil];
+}
+
+- (void)testCreateUser{
+    
 }
 
 - (void)testPerformanceExample {

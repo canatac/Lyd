@@ -17,6 +17,28 @@
 		8CD7D7E71DFACD6300453C6F /* LydTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7E61DFACD6300453C6F /* LydTestTests.m */; };
 		8CD7D7F21DFACEBC00453C6F /* randomuser.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F11DFACEBC00453C6F /* randomuser.json */; };
 		8CD7D7F41DFACEF600453C6F /* lydiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F31DFACEF600453C6F /* lydiaTests.m */; };
+		8CD7D7FA1DFAD85A00453C6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F91DFAD85A00453C6F /* User.m */; };
+		8CD7D7FB1DFAD85A00453C6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F91DFAD85A00453C6F /* User.m */; };
+		8CD7D7FE1DFAD89300453C6F /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7FD1DFAD89300453C6F /* Server.m */; };
+		8CD7D7FF1DFAD89300453C6F /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7FD1DFAD89300453C6F /* Server.m */; };
+		8CD7D8011DFAE56C00453C6F /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD7D8001DFAE56C00453C6F /* JSONModel.framework */; };
+		8CD7D8021DFAE56C00453C6F /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD7D8001DFAE56C00453C6F /* JSONModel.framework */; };
+		8CD7D8221DFAECD000453C6F /* IdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81C1DFAECD000453C6F /* IdModel.m */; };
+		8CD7D8231DFAECD000453C6F /* IdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81C1DFAECD000453C6F /* IdModel.m */; };
+		8CD7D8241DFAECD000453C6F /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81D1DFAECD000453C6F /* LocationModel.m */; };
+		8CD7D8251DFAECD000453C6F /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81D1DFAECD000453C6F /* LocationModel.m */; };
+		8CD7D8261DFAECD000453C6F /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81E1DFAECD000453C6F /* LoginModel.m */; };
+		8CD7D8271DFAECD000453C6F /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81E1DFAECD000453C6F /* LoginModel.m */; };
+		8CD7D8281DFAECD000453C6F /* NameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81F1DFAECD000453C6F /* NameModel.m */; };
+		8CD7D8291DFAECD000453C6F /* NameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D81F1DFAECD000453C6F /* NameModel.m */; };
+		8CD7D82A1DFAECD000453C6F /* PictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8201DFAECD000453C6F /* PictureModel.m */; };
+		8CD7D82B1DFAECD000453C6F /* PictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8201DFAECD000453C6F /* PictureModel.m */; };
+		8CD7D82C1DFAECD000453C6F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8211DFAECD000453C6F /* UserModel.m */; };
+		8CD7D82D1DFAECD000453C6F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8211DFAECD000453C6F /* UserModel.m */; };
+		8CD7D8301DFAF43F00453C6F /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D82F1DFAF43F00453C6F /* ResultModel.m */; };
+		8CD7D8311DFAF43F00453C6F /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D82F1DFAF43F00453C6F /* ResultModel.m */; };
+		8CD7D8391DFB09C600453C6F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8371DFB09C600453C6F /* MyCell.m */; };
+		8CD7D83A1DFB09C600453C6F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8371DFB09C600453C6F /* MyCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +69,27 @@
 		8CD7D7E81DFACD6300453C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD7D7F11DFACEBC00453C6F /* randomuser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomuser.json; sourceTree = "<group>"; };
 		8CD7D7F31DFACEF600453C6F /* lydiaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lydiaTests.m; sourceTree = "<group>"; };
+		8CD7D7F81DFAD85A00453C6F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8CD7D7F91DFAD85A00453C6F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8CD7D7FC1DFAD89300453C6F /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		8CD7D7FD1DFAD89300453C6F /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		8CD7D8001DFAE56C00453C6F /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONModel.framework; path = Carthage/Build/iOS/JSONModel.framework; sourceTree = "<group>"; };
+		8CD7D8041DFAE7C600453C6F /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		8CD7D8081DFAE8EB00453C6F /* IdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdModel.h; sourceTree = "<group>"; };
+		8CD7D80C1DFAE99D00453C6F /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		8CD7D8101DFAE9E500453C6F /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		8CD7D8141DFAEA2C00453C6F /* NameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameModel.h; sourceTree = "<group>"; };
+		8CD7D8181DFAEA8800453C6F /* PictureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureModel.h; sourceTree = "<group>"; };
+		8CD7D81C1DFAECD000453C6F /* IdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdModel.m; sourceTree = "<group>"; };
+		8CD7D81D1DFAECD000453C6F /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
+		8CD7D81E1DFAECD000453C6F /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		8CD7D81F1DFAECD000453C6F /* NameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameModel.m; sourceTree = "<group>"; };
+		8CD7D8201DFAECD000453C6F /* PictureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureModel.m; sourceTree = "<group>"; };
+		8CD7D8211DFAECD000453C6F /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		8CD7D82E1DFAF43F00453C6F /* ResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
+		8CD7D82F1DFAF43F00453C6F /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
+		8CD7D8361DFB09C600453C6F /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		8CD7D8371DFB09C600453C6F /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD7D8011DFAE56C00453C6F /* JSONModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD7D8021DFAE56C00453C6F /* JSONModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +119,7 @@
 				8CD7D7C81DFACD6300453C6F /* LydTest */,
 				8CD7D7E51DFACD6300453C6F /* LydTestTests */,
 				8CD7D7C71DFACD6300453C6F /* Products */,
+				8CD7D8001DFAE56C00453C6F /* JSONModel.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +139,8 @@
 				8CD7D7CD1DFACD6300453C6F /* AppDelegate.m */,
 				8CD7D7CF1DFACD6300453C6F /* MasterViewController.h */,
 				8CD7D7D01DFACD6300453C6F /* MasterViewController.m */,
+				8CD7D8361DFB09C600453C6F /* MyCell.h */,
+				8CD7D8371DFB09C600453C6F /* MyCell.m */,
 				8CD7D7D21DFACD6300453C6F /* DetailViewController.h */,
 				8CD7D7D31DFACD6300453C6F /* DetailViewController.m */,
 				8CD7D7D51DFACD6300453C6F /* Main.storyboard */,
@@ -100,6 +148,24 @@
 				8CD7D7DA1DFACD6300453C6F /* LaunchScreen.storyboard */,
 				8CD7D7DD1DFACD6300453C6F /* Info.plist */,
 				8CD7D7C91DFACD6300453C6F /* Supporting Files */,
+				8CD7D7F81DFAD85A00453C6F /* User.h */,
+				8CD7D7F91DFAD85A00453C6F /* User.m */,
+				8CD7D82E1DFAF43F00453C6F /* ResultModel.h */,
+				8CD7D82F1DFAF43F00453C6F /* ResultModel.m */,
+				8CD7D8041DFAE7C600453C6F /* UserModel.h */,
+				8CD7D81C1DFAECD000453C6F /* IdModel.m */,
+				8CD7D81D1DFAECD000453C6F /* LocationModel.m */,
+				8CD7D81E1DFAECD000453C6F /* LoginModel.m */,
+				8CD7D81F1DFAECD000453C6F /* NameModel.m */,
+				8CD7D8201DFAECD000453C6F /* PictureModel.m */,
+				8CD7D8211DFAECD000453C6F /* UserModel.m */,
+				8CD7D8081DFAE8EB00453C6F /* IdModel.h */,
+				8CD7D80C1DFAE99D00453C6F /* LocationModel.h */,
+				8CD7D8101DFAE9E500453C6F /* LoginModel.h */,
+				8CD7D8141DFAEA2C00453C6F /* NameModel.h */,
+				8CD7D8181DFAEA8800453C6F /* PictureModel.h */,
+				8CD7D7FC1DFAD89300453C6F /* Server.h */,
+				8CD7D7FD1DFAD89300453C6F /* Server.m */,
 			);
 			path = LydTest;
 			sourceTree = "<group>";
@@ -132,6 +198,7 @@
 				8CD7D7C21DFACD6300453C6F /* Sources */,
 				8CD7D7C31DFACD6300453C6F /* Frameworks */,
 				8CD7D7C41DFACD6300453C6F /* Resources */,
+				8CD7D8031DFAE74900453C6F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -222,15 +289,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8CD7D8031DFAE74900453C6F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/JSONModel.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CD7D7C21DFACD6300453C6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD7D7FA1DFAD85A00453C6F /* User.m in Sources */,
+				8CD7D8221DFAECD000453C6F /* IdModel.m in Sources */,
+				8CD7D82C1DFAECD000453C6F /* UserModel.m in Sources */,
+				8CD7D8261DFAECD000453C6F /* LoginModel.m in Sources */,
+				8CD7D82A1DFAECD000453C6F /* PictureModel.m in Sources */,
+				8CD7D8301DFAF43F00453C6F /* ResultModel.m in Sources */,
 				8CD7D7CE1DFACD6300453C6F /* AppDelegate.m in Sources */,
+				8CD7D8281DFAECD000453C6F /* NameModel.m in Sources */,
 				8CD7D7D11DFACD6300453C6F /* MasterViewController.m in Sources */,
+				8CD7D8241DFAECD000453C6F /* LocationModel.m in Sources */,
 				8CD7D7CB1DFACD6300453C6F /* main.m in Sources */,
+				8CD7D7FE1DFAD89300453C6F /* Server.m in Sources */,
 				8CD7D7D41DFACD6300453C6F /* DetailViewController.m in Sources */,
+				8CD7D8391DFB09C600453C6F /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD7D8291DFAECD000453C6F /* NameModel.m in Sources */,
+				8CD7D82B1DFAECD000453C6F /* PictureModel.m in Sources */,
 				8CD7D7E71DFACD6300453C6F /* LydTestTests.m in Sources */,
+				8CD7D8311DFAF43F00453C6F /* ResultModel.m in Sources */,
 				8CD7D7F41DFACEF600453C6F /* lydiaTests.m in Sources */,
+				8CD7D83A1DFB09C600453C6F /* MyCell.m in Sources */,
+				8CD7D8251DFAECD000453C6F /* LocationModel.m in Sources */,
+				8CD7D7FF1DFAD89300453C6F /* Server.m in Sources */,
+				8CD7D82D1DFAECD000453C6F /* UserModel.m in Sources */,
+				8CD7D7FB1DFAD85A00453C6F /* User.m in Sources */,
+				8CD7D8231DFAECD000453C6F /* IdModel.m in Sources */,
+				8CD7D8271DFAECD000453C6F /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +472,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E449Q2SF5F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LydTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.canatac.LydTest;
@@ -380,6 +488,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E449Q2SF5F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LydTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.canatac.LydTest;
@@ -392,6 +504,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = E449Q2SF5F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LydTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.canatac.LydTestTests;
@@ -405,6 +521,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = E449Q2SF5F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LydTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.canatac.LydTestTests;

@@ -8,10 +8,16 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "UserModel.h"
+#import "User.h"
+#import "MyCell.h"
 
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
+@property NSArray<UserModel> *users;
+@property NSUserDefaults *userDefaults;
+@property id observer;
 @end
 
 @implementation MasterViewController
@@ -24,6 +30,13 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.userDefaults = [NSUserDefaults standardUserDefaults];
+    if (!self.objects) {
+        self.objects = [[NSMutableArray alloc] init];
+    }
+    
+    self.addUser;
+    
 }
 
 
@@ -40,12 +53,18 @@
 
 
 - (void)insertNewObject:(id)sender {
+    [[NSNotificationCenter defaultCenter] removeObserver:self.observer];
+    self.observer = nil;
+    
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    self.addUser;
+    
+    //[self.objects insertObject:[NSDate date] atIndex:0];
+    //NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    //[self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
@@ -76,17 +95,19 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    MyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UserModel *object = self.objects[indexPath.row];
+    cell.firstName.text = object.name.first;
+    cell.lastName.text = object.name.last;
+    cell.email.text = object.email;
     return cell;
 }
 
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 
@@ -97,6 +118,40 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+}
+
+-(void)addUser{
+
+    
+    [[User alloc]init].getUser;
+    
+    self.observer = [
+     [NSNotificationCenter defaultCenter]
+     addObserverForName:@"DATA_RECEIVED"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [[NSNotificationCenter defaultCenter] removeObserver:self name:@"DATA_RECEIVED" object:nil];
+
+         NSLog(@"Notification received!");
+         NSArray *newUsers = [[[User alloc]init] map:(NSDictionary*)notification.object];
+         for (UserModel *user in newUsers){
+             [self.objects insertObject:user atIndex:0];
+         }
+         //[self.objects addObjectsFromArray:[[[User alloc]init] map:(NSDictionary*)notification.object]];
+         
+         //CACHE
+         /*
+         for (UserModel *user in self.objects){
+            [self.userDefaults setObject:user forKey:[NSString stringWithFormat:@"%@",user.email]];
+            [self.userDefaults synchronize];
+         }
+         */
+         [self.tableView reloadData];
+     }
+     ];
+
 }
 
 
