@@ -15,6 +15,8 @@
 		8CD7D7D91DFACD6300453C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD7D7D81DFACD6300453C6F /* Assets.xcassets */; };
 		8CD7D7DC1DFACD6300453C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD7D7DA1DFACD6300453C6F /* LaunchScreen.storyboard */; };
 		8CD7D7E71DFACD6300453C6F /* LydTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7E61DFACD6300453C6F /* LydTestTests.m */; };
+		8CD7D7F21DFACEBC00453C6F /* randomuser.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F11DFACEBC00453C6F /* randomuser.json */; };
+		8CD7D7F41DFACEF600453C6F /* lydiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D7F31DFACEF600453C6F /* lydiaTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		8CD7D7E21DFACD6300453C6F /* LydTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LydTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD7D7E61DFACD6300453C6F /* LydTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LydTestTests.m; sourceTree = "<group>"; };
 		8CD7D7E81DFACD6300453C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD7D7F11DFACEBC00453C6F /* randomuser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomuser.json; sourceTree = "<group>"; };
+		8CD7D7F31DFACEF600453C6F /* lydiaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lydiaTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		8CD7D7BD1DFACD6300453C6F = {
 			isa = PBXGroup;
 			children = (
+				8CD7D7F11DFACEBC00453C6F /* randomuser.json */,
 				8CD7D7C81DFACD6300453C6F /* LydTest */,
 				8CD7D7E51DFACD6300453C6F /* LydTestTests */,
 				8CD7D7C71DFACD6300453C6F /* Products */,
@@ -110,6 +115,7 @@
 		8CD7D7E51DFACD6300453C6F /* LydTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				8CD7D7F31DFACEF600453C6F /* lydiaTests.m */,
 				8CD7D7E61DFACD6300453C6F /* LydTestTests.m */,
 				8CD7D7E81DFACD6300453C6F /* Info.plist */,
 			);
@@ -203,6 +209,7 @@
 				8CD7D7DC1DFACD6300453C6F /* LaunchScreen.storyboard in Resources */,
 				8CD7D7D91DFACD6300453C6F /* Assets.xcassets in Resources */,
 				8CD7D7D71DFACD6300453C6F /* Main.storyboard in Resources */,
+				8CD7D7F21DFACEBC00453C6F /* randomuser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD7D7E71DFACD6300453C6F /* LydTestTests.m in Sources */,
+				8CD7D7F41DFACEF600453C6F /* lydiaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

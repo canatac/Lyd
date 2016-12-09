@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \{\
+  "results": [\
+    \{\
+      "gender": "female",\
+      "name": \{\
+        "title": "ms",\
+        "first": "valeria",\
+        "last": "freitag"\
+      \},\
+      "location": \{\
+        "street": "2289 dorfstra\'dfe",\
+        "city": "goslar",\
+        "state": "schleswig-holstein",\
+        "postcode": 16025\
+      \},\
+      "email": "valeria.freitag@example.com",\
+      "login": \{\
+        "username": "bigbutterfly141",\
+        "password": "just4fun",\
+        "salt": "2xkuKb55",\
+        "md5": "868a0e3861687d1fd26c935d1aec677e",\
+        "sha1": "2c00f2391c82c41de4f12d7c722b1783d2a4e848",\
+        "sha256": "fded09fc5f20c272b1d08d02ebb06ef3147768eb237f0464d6200be8fb8c9f67"\
+      \},\
+      "dob": "1958-08-18 00:14:07",\
+      "registered": "2004-10-20 05:55:50",\
+      "phone": "0005-6059856",\
+      "cell": "0175-9680666",\
+      "id": \{\
+        "name": "",\
+        "value": null\
+      \},\
+      "picture": \{\
+        "large": "https://randomuser.me/api/portraits/women/74.jpg",\
+        "medium": "https://randomuser.me/api/portraits/med/women/74.jpg",\
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/74.jpg"\
+      \},\
+      "nat": "DE"\
+    \}\
+  ],\
+  "info": \{\
+    "seed": "dd98233daa16516f",\
+    "results": 1,\
+    "page": 1,\
+    "version": "1.1"\
+  \}\
+\}}
