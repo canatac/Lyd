@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,13 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon-512" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-c7-4ac">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-512" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-c7-4ac">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.46274509803921571" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="uhg-c7-4ac" secondAttribute="bottom" id="NAZ-WU-KfT"/>
+                            <constraint firstItem="uhg-c7-4ac" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="PXZ-hC-fg1"/>
+                            <constraint firstItem="uhg-c7-4ac" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="d7b-W8-fVK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uhg-c7-4ac" secondAttribute="trailing" constant="-16" id="rev-Hv-fHX"/>
                             <constraint firstItem="uhg-c7-4ac" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xNC-kA-B6F"/>
                             <constraint firstItem="uhg-c7-4ac" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xhc-Rg-LfI"/>
                         </constraints>
