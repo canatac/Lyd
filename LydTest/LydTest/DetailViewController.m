@@ -7,17 +7,23 @@
 //
 
 #import "DetailViewController.h"
+#import "MyTableView.h"
 
 @interface DetailViewController ()
+@property (strong, nonatomic) IBOutlet MyTableView *tableView;
 
 @end
 
-@implementation DetailViewController
+@implementation DetailViewController 
 
 - (void)configureView {
     // Update the user interface for the detail item.
+    self.tableView.user = self.detailItem;
+    self.tableView.dataSource = self.tableView;
+    self.tableView.delegate = self.tableView;
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.detailDescriptionLabel.text =
+        [NSString stringWithFormat:@"%@ - %@, %@",self.detailItem.email,self.detailItem.name.first,self.detailItem.name.last ];
     }
 }
 
@@ -37,7 +43,7 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(NSDate *)newDetailItem {
+- (void)setDetailItem:(UserModel *)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
         

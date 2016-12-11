@@ -28,14 +28,12 @@
                                                         NSError *localError = nil;
                                                         
                                                         NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&localError];
-                                                        /*
-                                                        NSString* json = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                                                        */
+                                                       
                                                         if (localError != nil) {
                                                             NSLog(@"%@",localError);
                                                         }
                                                         
-                                                        NSLog(@"%@", parsedObject);
+                                                        NSLog(@"PARSED OBJECT : %@", parsedObject);
                                                         
                                                         [[NSNotificationCenter defaultCenter] postNotificationName:@"DATA_RECEIVED" object:parsedObject];
                                                     }

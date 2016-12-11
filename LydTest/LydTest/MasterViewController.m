@@ -62,9 +62,6 @@
     
     self.addUser;
     
-    //[self.objects insertObject:[NSDate date] atIndex:0];
-    //NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    //[self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
@@ -134,20 +131,11 @@
      {
          [[NSNotificationCenter defaultCenter] removeObserver:self name:@"DATA_RECEIVED" object:nil];
 
-         NSLog(@"Notification received!");
+         NSLog(@"Notification received! : %@", notification.object);
          NSArray *newUsers = [[[User alloc]init] map:(NSDictionary*)notification.object];
          for (UserModel *user in newUsers){
              [self.objects insertObject:user atIndex:0];
          }
-         //[self.objects addObjectsFromArray:[[[User alloc]init] map:(NSDictionary*)notification.object]];
-         
-         //CACHE
-         /*
-         for (UserModel *user in self.objects){
-            [self.userDefaults setObject:user forKey:[NSString stringWithFormat:@"%@",user.email]];
-            [self.userDefaults synchronize];
-         }
-         */
          [self.tableView reloadData];
      }
      ];

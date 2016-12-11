@@ -21,8 +21,11 @@
     
     NSError *error;
     ResultModel *result = [[ResultModel alloc] initWithDictionary:json error:&error];
-    NSLog(@"%@", result.results);
     
+    if (error != nil){
+        NSLog(@"RESULTS Error : %@", error);
+    }
+
     NSMutableArray<UserModel> *users = [[NSMutableArray<UserModel> alloc]init];
     
     for (UserModel* userModel in result.results) {

@@ -10,6 +10,6 @@
 #import "UserModel.h"
 
 @interface User : NSObject
--(void)getUser;//:completion:(void (^)(UserModel* result))completionHandler;
+-(void)getUser;
 -(NSArray<UserModel>*)map:(NSDictionary*)json;
 @end

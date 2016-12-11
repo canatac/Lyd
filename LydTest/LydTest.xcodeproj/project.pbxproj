@@ -39,6 +39,8 @@
 		8CD7D8311DFAF43F00453C6F /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D82F1DFAF43F00453C6F /* ResultModel.m */; };
 		8CD7D8391DFB09C600453C6F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8371DFB09C600453C6F /* MyCell.m */; };
 		8CD7D83A1DFB09C600453C6F /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D8371DFB09C600453C6F /* MyCell.m */; };
+		8CD7D83F1DFB1FCC00453C6F /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D83E1DFB1FCC00453C6F /* MyTableView.m */; };
+		8CD7D8401DFB1FCC00453C6F /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD7D83E1DFB1FCC00453C6F /* MyTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		8CD7D82F1DFAF43F00453C6F /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
 		8CD7D8361DFB09C600453C6F /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		8CD7D8371DFB09C600453C6F /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		8CD7D83D1DFB1FCC00453C6F /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		8CD7D83E1DFB1FCC00453C6F /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +141,10 @@
 			children = (
 				8CD7D7CC1DFACD6300453C6F /* AppDelegate.h */,
 				8CD7D7CD1DFACD6300453C6F /* AppDelegate.m */,
-				8CD7D7CF1DFACD6300453C6F /* MasterViewController.h */,
-				8CD7D7D01DFACD6300453C6F /* MasterViewController.m */,
-				8CD7D8361DFB09C600453C6F /* MyCell.h */,
-				8CD7D8371DFB09C600453C6F /* MyCell.m */,
-				8CD7D7D21DFACD6300453C6F /* DetailViewController.h */,
-				8CD7D7D31DFACD6300453C6F /* DetailViewController.m */,
+				8CD7D84E1DFD798600453C6F /* VC */,
+				8CD7D84C1DFD795700453C6F /* VIEWS */,
+				8CD7D84B1DFD793B00453C6F /* MODEL */,
+				8CD7D84D1DFD796D00453C6F /* SERVICES */,
 				8CD7D7D51DFACD6300453C6F /* Main.storyboard */,
 				8CD7D7D81DFACD6300453C6F /* Assets.xcassets */,
 				8CD7D7DA1DFACD6300453C6F /* LaunchScreen.storyboard */,
@@ -150,22 +152,6 @@
 				8CD7D7C91DFACD6300453C6F /* Supporting Files */,
 				8CD7D7F81DFAD85A00453C6F /* User.h */,
 				8CD7D7F91DFAD85A00453C6F /* User.m */,
-				8CD7D82E1DFAF43F00453C6F /* ResultModel.h */,
-				8CD7D82F1DFAF43F00453C6F /* ResultModel.m */,
-				8CD7D8041DFAE7C600453C6F /* UserModel.h */,
-				8CD7D81C1DFAECD000453C6F /* IdModel.m */,
-				8CD7D81D1DFAECD000453C6F /* LocationModel.m */,
-				8CD7D81E1DFAECD000453C6F /* LoginModel.m */,
-				8CD7D81F1DFAECD000453C6F /* NameModel.m */,
-				8CD7D8201DFAECD000453C6F /* PictureModel.m */,
-				8CD7D8211DFAECD000453C6F /* UserModel.m */,
-				8CD7D8081DFAE8EB00453C6F /* IdModel.h */,
-				8CD7D80C1DFAE99D00453C6F /* LocationModel.h */,
-				8CD7D8101DFAE9E500453C6F /* LoginModel.h */,
-				8CD7D8141DFAEA2C00453C6F /* NameModel.h */,
-				8CD7D8181DFAEA8800453C6F /* PictureModel.h */,
-				8CD7D7FC1DFAD89300453C6F /* Server.h */,
-				8CD7D7FD1DFAD89300453C6F /* Server.m */,
 			);
 			path = LydTest;
 			sourceTree = "<group>";
@@ -186,6 +172,58 @@
 				8CD7D7E81DFACD6300453C6F /* Info.plist */,
 			);
 			path = LydTestTests;
+			sourceTree = "<group>";
+		};
+		8CD7D84B1DFD793B00453C6F /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7D82E1DFAF43F00453C6F /* ResultModel.h */,
+				8CD7D82F1DFAF43F00453C6F /* ResultModel.m */,
+				8CD7D8041DFAE7C600453C6F /* UserModel.h */,
+				8CD7D8211DFAECD000453C6F /* UserModel.m */,
+				8CD7D80C1DFAE99D00453C6F /* LocationModel.h */,
+				8CD7D81D1DFAECD000453C6F /* LocationModel.m */,
+				8CD7D8101DFAE9E500453C6F /* LoginModel.h */,
+				8CD7D81E1DFAECD000453C6F /* LoginModel.m */,
+				8CD7D8181DFAEA8800453C6F /* PictureModel.h */,
+				8CD7D8201DFAECD000453C6F /* PictureModel.m */,
+				8CD7D8141DFAEA2C00453C6F /* NameModel.h */,
+				8CD7D81F1DFAECD000453C6F /* NameModel.m */,
+				8CD7D8081DFAE8EB00453C6F /* IdModel.h */,
+				8CD7D81C1DFAECD000453C6F /* IdModel.m */,
+			);
+			name = MODEL;
+			sourceTree = "<group>";
+		};
+		8CD7D84C1DFD795700453C6F /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7D83D1DFB1FCC00453C6F /* MyTableView.h */,
+				8CD7D83E1DFB1FCC00453C6F /* MyTableView.m */,
+				8CD7D8361DFB09C600453C6F /* MyCell.h */,
+				8CD7D8371DFB09C600453C6F /* MyCell.m */,
+			);
+			name = VIEWS;
+			sourceTree = "<group>";
+		};
+		8CD7D84D1DFD796D00453C6F /* SERVICES */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7D7FC1DFAD89300453C6F /* Server.h */,
+				8CD7D7FD1DFAD89300453C6F /* Server.m */,
+			);
+			name = SERVICES;
+			sourceTree = "<group>";
+		};
+		8CD7D84E1DFD798600453C6F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8CD7D7CF1DFACD6300453C6F /* MasterViewController.h */,
+				8CD7D7D01DFACD6300453C6F /* MasterViewController.m */,
+				8CD7D7D21DFACD6300453C6F /* DetailViewController.h */,
+				8CD7D7D31DFACD6300453C6F /* DetailViewController.m */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +363,7 @@
 				8CD7D7FE1DFAD89300453C6F /* Server.m in Sources */,
 				8CD7D7D41DFACD6300453C6F /* DetailViewController.m in Sources */,
 				8CD7D8391DFB09C600453C6F /* MyCell.m in Sources */,
+				8CD7D83F1DFB1FCC00453C6F /* MyTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +379,7 @@
 				8CD7D83A1DFB09C600453C6F /* MyCell.m in Sources */,
 				8CD7D8251DFAECD000453C6F /* LocationModel.m in Sources */,
 				8CD7D7FF1DFAD89300453C6F /* Server.m in Sources */,
+				8CD7D8401DFB1FCC00453C6F /* MyTableView.m in Sources */,
 				8CD7D82D1DFAECD000453C6F /* UserModel.m in Sources */,
 				8CD7D7FB1DFAD85A00453C6F /* User.m in Sources */,
 				8CD7D8231DFAECD000453C6F /* IdModel.m in Sources */,

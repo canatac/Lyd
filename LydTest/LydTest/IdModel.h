@@ -12,6 +12,6 @@
 @protocol IdModel;
 
 @interface IdModel : JSONModel
-@property (nonatomic) NSString *name;
-@property (nonatomic) NSString *value;
+@property (nonatomic) NSString <Optional> *name;
+@property (nonatomic) NSString <Optional> *value;
 @end
